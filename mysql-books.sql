@@ -71,3 +71,5 @@ INSERT INTO books VALUES (76, 'Heirs of General Practice', 'John McPhee', 4.17, 
 INSERT INTO books VALUES (77, 'The Control of Nature', 'John McPhee', 4.24, '0374522596', '9780374522599', 'en-US', 288, 3498, 305, STR_TO_DATE('9/1/1990', '%m/%d/%Y'), 'Farrar  Straus and Giroux');
 INSERT INTO books VALUES (78, 'Annals of the Former World', 'John McPhee', 4.34, '0374518734', '9780374518738', 'eng', 720, 3115, 228, STR_TO_DATE('1/6/1999', '%m/%d/%Y'), 'Farrar  Straus and Giroux');
 INSERT INTO books VALUES (79, 'Coming Into the Country', 'John McPhee', 4.22, '0374522871', '9780374522872', 'eng', 448, 5704, 261, STR_TO_DATE('4/1/1991', '%m/%d/%Y'), 'Farrar  Straus and Giroux');
+
+select id, title, authors, average_rating, isbn from books LIMIT 2;
