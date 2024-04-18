@@ -11,6 +11,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "books")
 public class Book implements Serializable {
@@ -104,7 +106,5 @@ public class Book implements Serializable {
     }
     public void setPublisher(String publisher) {
         this.publisher = publisher;
-    }
-
-    
+    }    
 }
